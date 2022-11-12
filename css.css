@@ -5,12 +5,14 @@
 }
 
 .generate {
-  margin: 50px 0 0 50px;
+  margin: auto;
   position: relative;
-  width: 50%;
+  width: 90%;
   border: 1px solid black;
   box-sizing: border-box;
-  min-height: 400px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-family: "Patrick Hand", cursive;
 }
 .generate-title {
@@ -31,6 +33,8 @@
   top: 40px;
   left: 0;
   width: 60px;
+  border-right: 1px solid #d4a373;
+  box-sizing: border-box;
 }
 .generate-number div {
   height: 50px;
@@ -38,4 +42,62 @@
   text-align: center;
   box-sizing: border-box;
   border-bottom: 1px solid #d4a373;
+}
+.generate-column {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 500px;
+}
+.generate-column-item {
+  position: relative;
+  cursor: pointer;
+  background-color: #fefae0;
+  height: 50px;
+  display: flex;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  align-items: center;
+}
+.generate-column-item select#option-type {
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin-left: 15px;
+  border-radius: 20px;
+  width: 100px;
+  height: 27px;
+}
+.generate-column-item .icon-menu {
+  margin-left: 15px;
+}
+.generate-column-item .icon-menu i {
+  font-size: 20px;
+}
+.generate-column-item .formula {
+  padding: 0 5px;
+  border-radius: 30px;
+  height: 30px;
+  border: 1px solid rgb(75, 75, 75);
+}
+.generate-column-item .formula input[type=text] {
+  border: none;
+}
+.generate-column-item .formula input[type=text]:focus {
+  outline: none;
+}
+.generate-column-item .button-order {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: #d4a373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.generate-column-item .button-order i {
+  font-size: 20px;
 }/*# sourceMappingURL=css.css.map */
