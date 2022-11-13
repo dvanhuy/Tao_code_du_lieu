@@ -5,9 +5,64 @@
 }
 
 .structure {
-  height: 50px;
+  height: 80px;
+  margin-bottom: 15px;
   width: 100%;
-  background-color: #d4a373;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.structure img {
+  position: absolute;
+  width: 150px;
+  left: 100px;
+}
+.structure-input {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  padding-left: 20px;
+  gap: 15px;
+  border: 1px solid #d4a373;
+}
+.structure-input .img-link-structure {
+  width: 25px;
+  height: 100%;
+  border-right: 1px solid #d4a373;
+}
+.structure-input .img-link-structure i {
+  margin-top: 17px;
+  margin-left: -5px;
+}
+.structure-input #structure-input-text {
+  width: 500px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.3rem;
+  border: none;
+}
+.structure-input #structure-input-text:focus {
+  outline: none;
+}
+.structure-input .more-choose {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  width: 40px;
+  border-left: 1px solid #d4a373;
+  box-sizing: border-box;
+}
+.structure-input .more-choose div {
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+          clip-path: polygon(0 0, 50% 50%, 100% 0);
+  background-color: black;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 45%;
+  margin-left: 10px;
 }
 
 .generate {
