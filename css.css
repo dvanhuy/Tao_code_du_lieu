@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.structure {
+  height: 50px;
+  width: 100%;
+  background-color: #d4a373;
+}
+
 .generate {
   margin: auto;
   position: relative;
@@ -28,6 +34,7 @@
   box-sizing: border-box;
 }
 .generate-number {
+  font-size: 1.3rem;
   background-color: #e9edc9;
   position: absolute;
   top: 40px;
@@ -37,7 +44,7 @@
   box-sizing: border-box;
 }
 .generate-number div {
-  height: 50px;
+  height: 60px;
   line-height: 60px;
   text-align: center;
   box-sizing: border-box;
@@ -47,19 +54,23 @@
   position: absolute;
   top: 40px;
   left: 60px;
-  width: 500px;
 }
 .generate-column-item {
+  box-sizing: border-box;
+  border-bottom: 1px solid #d4a373;
+  border-right: 1px solid #d4a373;
+  padding-right: 40px;
   position: relative;
-  cursor: pointer;
   background-color: #fefae0;
-  height: 50px;
+  height: 60px;
   display: flex;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   align-items: center;
 }
 .generate-column-item select#option-type {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.1rem;
   padding: 0 5px;
   box-sizing: border-box;
   margin-left: 15px;
@@ -74,18 +85,67 @@
   font-size: 20px;
 }
 .generate-column-item .formula {
-  padding: 0 5px;
+  background-color: white;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
   border-radius: 30px;
   height: 30px;
+  box-sizing: border-box;
   border: 1px solid rgb(75, 75, 75);
 }
+.generate-column-item .formula i:first-child {
+  margin-left: 10px;
+}
 .generate-column-item .formula input[type=text] {
+  margin-left: 10px;
+  font-size: 1.1rem;
   border: none;
+  padding-right: 5px;
+  font-family: "Patrick Hand", cursive;
 }
 .generate-column-item .formula input[type=text]:focus {
   outline: none;
 }
+.generate-column-item .formula .more-choose {
+  cursor: pointer;
+  position: relative;
+  height: 110%;
+  width: 30px;
+  border-left: 1px solid rgb(128, 128, 128);
+  box-sizing: border-box;
+}
+.generate-column-item .formula .more-choose div {
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+          clip-path: polygon(0 0, 50% 50%, 100% 0);
+  background-color: black;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 45%;
+  margin-left: 5px;
+}
+.generate-column-item .more-feature {
+  margin-left: 30px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+.generate-column-item .more-feature div {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+.generate-column-item .more-feature:hover {
+  background-color: #d5b18e;
+}
 .generate-column-item .button-order {
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 50%;
