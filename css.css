@@ -5,6 +5,7 @@
 }
 
 .structure {
+  font-family: "Patrick Hand", cursive;
   height: 80px;
   margin-bottom: 15px;
   width: 100%;
@@ -63,6 +64,49 @@
   position: absolute;
   top: 45%;
   margin-left: 10px;
+}
+.structure-input .combobox-structure-input {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  border-radius: 20px;
+  background-color: #fafafa;
+  left: 0;
+  z-index: 2;
+  box-shadow: 2px 2px 5px rgb(129, 129, 129);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.structure-input .combobox-structure-input-hide {
+  height: 0;
+  display: none;
+  opacity: 0;
+}
+.structure-input .combobox-structure-input i {
+  color: rgb(229, 229, 0);
+}
+.structure-input .combobox-structure-input > div:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.structure-input .combobox-structure-input > div:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.structure-input .combobox-structure-input > div {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 40px;
+}
+.structure-input .combobox-structure-input > div div {
+  padding-left: 30px;
+  font-weight: bold;
+}
+.structure-input .combobox-structure-input > div:hover {
+  background-color: #d5b18e;
 }
 
 .generate {
