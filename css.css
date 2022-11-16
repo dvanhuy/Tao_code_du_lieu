@@ -47,7 +47,7 @@
 .structure-input #structure-input-text:focus {
   outline: none;
 }
-.structure-input .more-choose {
+.structure-input .more-choose-hint {
   cursor: pointer;
   position: relative;
   height: 100%;
@@ -55,7 +55,7 @@
   border-left: 1px solid #d4a373;
   box-sizing: border-box;
 }
-.structure-input .more-choose div {
+.structure-input .more-choose-hint div {
   -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
           clip-path: polygon(0 0, 50% 50%, 100% 0);
   background-color: black;
@@ -167,6 +167,15 @@
   border-bottom-right-radius: 30px;
   align-items: center;
 }
+.generate-column-item-extend {
+  height: 150px;
+}
+.generate-column-item-extend .formula {
+  height: 102px !important;
+}
+.generate-column-item-extend .formula textarea {
+  height: 100px;
+}
 .generate-column-item select#option-type {
   font-family: "Patrick Hand", cursive;
   font-size: 1.1rem;
@@ -196,20 +205,22 @@
 .generate-column-item .formula i:first-child {
   margin-left: 10px;
 }
-.generate-column-item .formula input[type=text] {
-  margin-left: 10px;
-  font-size: 1.1rem;
-  border: none;
-  padding-right: 5px;
+.generate-column-item .formula textarea {
+  padding-right: 10px;
+  width: 240px;
   font-family: "Patrick Hand", cursive;
+  font-size: 1.1rem;
+  resize: none;
+  margin-left: 10px;
+  border: none;
 }
-.generate-column-item .formula input[type=text]:focus {
+.generate-column-item .formula textarea:focus {
   outline: none;
 }
 .generate-column-item .formula .more-choose {
   cursor: pointer;
   position: relative;
-  height: 110%;
+  height: 100%;
   width: 30px;
   border-left: 1px solid rgb(128, 128, 128);
   box-sizing: border-box;

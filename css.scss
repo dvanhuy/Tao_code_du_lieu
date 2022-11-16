@@ -46,7 +46,7 @@
                 outline: none;
             }
         }
-        .more-choose{
+        .more-choose-hint{
             cursor: pointer;
             position: relative;
             height: 100%;
@@ -148,6 +148,16 @@
         top: 40px;
         left: 60px;
         &-item{
+            //mo rong
+            &-extend{
+                height: 150px;
+                .formula{
+                    height: 102px !important;
+                    textarea{
+                        height: 100px;
+                    }
+                }
+            }
             box-sizing: border-box;
             border-bottom: 1px solid #d4a373;
             border-right: 1px solid #d4a373;
@@ -187,20 +197,23 @@
                 i:first-child{
                     margin-left: 10px;
                 }
-                input[type="text"]{
-                    margin-left: 10px;
-                    font-size: 1.1rem;
-                    border: none;
-                    padding-right: 5px;
+
+                textarea{
+                    padding-right: 10px;
+                    width: 240px;
                     font-family: 'Patrick Hand', cursive;
-                }
-                input[type="text"]:focus{
-                    outline: none;
+                    font-size: 1.1rem;
+                    resize: none;
+                    margin-left: 10px;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                    }
                 }
                 .more-choose{
                     cursor: pointer;
                     position: relative;
-                    height: 110%;
+                    height: 100%;
                     width: 30px;
                     border-left: 1px solid rgb(128, 128, 128);
                     box-sizing: border-box;
